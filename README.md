@@ -136,6 +136,8 @@ A comprehensive cheatsheet covering 100+ Git commands was created using AI assis
 
 *Report demonstrates practical Git proficiency and AI-assisted learning.*
 
+---
+
 # Secure Local Login System 🛡️
 
 A **defensive-by-design** authentication system built with Node.js, Express, and Docker. This project implements a full **Role-Based Access Control (RBAC)** system with "Defense-in-Depth" security principles, running entirely locally using DynamoDB Local and self-signed TLS.
