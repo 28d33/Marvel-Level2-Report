@@ -266,6 +266,115 @@ This project is for **educational purposes only**. The `JWT_SECRET` is hardcoded
 
 ---
 
+# TASK 3: Create an Application on EC2 Instance
+
+
+---
+
+## Overview of Amazon EC2
+
+Amazon EC2 (Elastic Compute Cloud) provides scalable virtual servers in the cloud. It allows users to run applications with full control over the operating system, networking, and storage. EC2 supports a wide range of use cases, including web applications, APIs, and backend services.
+
+---
+
+## Steps Performed
+
+### 1. Launching an EC2 Instance
+
+- Logged in to the AWS Management Console  
+- Navigated to **EC2 → Instances**  
+- Launched a new instance with the following configuration:
+  - **Instance Type:** t2.micro  
+  - **AMI:** Amazon Linux  
+  - **Key Pair:** Configured for secure SSH access  
+  - **Network:** Default VPC  
+
+The instance was successfully launched and reached the **Running** state.
+
+---
+
+### 2. Connecting to the EC2 Instance
+
+- Connected to the EC2 instance using SSH  
+- Verified terminal access to the instance  
+
+This allowed full control of the server through the command line.
+
+---
+
+### 3. Installing Required Software
+
+- Updated system packages  
+- Installed Python and required dependencies  
+- Installed Flask to create a dynamic web application  
+
+This prepared the EC2 instance to host a web-based application.
+
+---
+
+### 4. Creating a Dynamic Application
+
+A simple dynamic web application was created using Python and Flask.  
+The application responds to HTTP requests, confirming that it is running on an EC2 instance.
+
+Key characteristics:
+- Runs on port **80**
+- Binds to `0.0.0.0` for public accessibility
+- Handles dynamic HTTP requests
+
+---
+
+### 5. Running the Application in the Background
+
+The application was started in the background using the `nohup` command:
+
+```bash
+nohup python3 app.py > app.log 2>&1 &
+```
+
+This ensured the application continued running even after closing the terminal session.
+
+---
+
+### 6. Configuring Security (Firewall)
+
+- Identified the Security Group attached to the EC2 instance  
+- Opened **port 80** for inbound HTTP traffic using AWS CLI  
+- Allowed access from `0.0.0.0/0`  
+
+This enabled external access to the application via the public IP.
+
+---
+
+### 7. Verifying the Application
+
+- Verified locally using:
+```bash
+curl http://localhost
+```
+
+- Verified externally using:
+```bash
+curl http://<EC2-Public-IP>
+```
+
+The application responded successfully in both cases.
+
+---
+
+## Result
+
+The dynamic application was successfully deployed and executed on an Amazon EC2 instance. The instance was configured securely, and the application was accessible over the internet.
+
+---
+
+## Conclusion
+
+This task demonstrated how Amazon EC2 can be used to build and run virtually any dynamic application. By launching and configuring an EC2 instance, managing security settings, and deploying an application, a complete cloud-based deployment was achieved.
+
+---
+
+
 # OSI Model and Cloud Computing
 
 ## 1. Introduction
