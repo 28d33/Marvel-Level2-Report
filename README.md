@@ -101,7 +101,7 @@ git pull origin main
 A comprehensive cheatsheet covering 100+ Git commands was created using AI assistance, organized by categories with practical examples.
 
 **📋 Access Cheatsheet:**  
-**[https://github.com/28d33/Cheatsheets/blob/main/git.md]**
+**[Insert link: https://github.com/28d33/Cheatsheets/blob/main/git.md]**
 
 ---
 
