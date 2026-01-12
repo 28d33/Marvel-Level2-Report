@@ -374,6 +374,92 @@ This task demonstrated how Amazon EC2 can be used to build and run virtually any
 
 ---
 
+# TASK 4: AWS CloudFront – Serve Content from Multiple S3 Buckets
+
+---
+
+## Overview of Amazon CloudFront
+
+Amazon CloudFront is a global content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to users worldwide with low latency and high transfer speeds. CloudFront works by caching content at edge locations close to users, reducing load on the origin server.
+
+---
+
+## Overview of Amazon S3
+
+Amazon Simple Storage Service (Amazon S3) is a scalable object storage service designed for high availability, durability, and security. It is commonly used to store static assets such as images, videos, HTML files, and application data.
+
+---
+
+## Architecture Overview
+
+- Multiple Amazon S3 buckets act as content origins
+- Amazon CloudFront distribution is created
+- CloudFront edge locations cache and serve content globally
+- End users access content via the CloudFront distribution URL
+
+This architecture improves performance, scalability, and reliability.
+
+---
+
+## Steps Performed
+
+### 1. Creating Amazon S3 Buckets
+
+- Created multiple S3 buckets to store web content
+- Uploaded sample static and dynamic content files
+- Configured appropriate bucket permissions and policies
+
+---
+
+### 2. Configuring S3 for CloudFront Access
+
+- Disabled public access where applicable
+- Used CloudFront Origin Access Control (OAC) or Origin Access Identity (OAI)
+- Ensured secure access between CloudFront and S3
+
+---
+
+### 3. Creating a CloudFront Distribution
+
+- Navigated to **CloudFront → Create Distribution**
+- Selected Amazon S3 buckets as origins
+- Configured default cache behavior
+- Enabled HTTP and HTTPS access
+- Selected global edge locations
+
+---
+
+### 4. Enabling Dynamic Content Delivery
+
+- Configured cache behaviors for dynamic content
+- Forwarded query strings and headers where required
+- Set appropriate TTL (Time To Live) values
+
+This ensured dynamic content is served correctly while maintaining performance.
+
+---
+
+### 5. Testing the CloudFront Distribution
+
+- Accessed content using the CloudFront distribution domain name
+- Verified content delivery from different S3 buckets
+- Observed reduced latency and faster response times
+
+---
+
+## Result
+
+The CloudFront distribution was successfully configured to serve content from multiple Amazon S3 buckets. Content was delivered securely and efficiently to users through global edge locations.
+
+---
+
+
+## Conclusion
+
+This task demonstrated how Amazon CloudFront can be used in conjunction with Amazon S3 to deliver content efficiently across the globe. By setting up a dynamic content distribution, CloudFront enhanced performance, security, and scalability while serving content from multiple S3 buckets.
+
+---
+
 
 # OSI Model and Cloud Computing
 
