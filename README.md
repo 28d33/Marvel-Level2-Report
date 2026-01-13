@@ -690,7 +690,7 @@ This assessment demonstrated the complete lifecycle of setting up a penetration 
 
 
 
-# OSI Model and Cloud Computing
+# OSI Model
 
 ## 1. Introduction
 
