@@ -1042,7 +1042,7 @@ pip install pycryptodome
 
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Screenshot%20from%202026-01-13%2012-15-26.png)
 
-#### Step 3: Secure Chat
+
 
 
 ---
@@ -1064,10 +1064,10 @@ A fixed-size length header is used to handle TCP packet fragmentation.
 ---
 
 
-## 7. Conclusion
+## 6. Conclusion
 
 This project demonstrates secure communication using hybrid encryption.
 
----
+
 
 
