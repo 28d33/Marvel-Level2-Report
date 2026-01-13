@@ -461,6 +461,255 @@ This task demonstrated how Amazon CloudFront can be used in conjunction with Ama
 ---
 
 
+# TASK: Penetration Testing Report with Kali
+
+---
+
+##  Introduction
+
+Kali Linux is a Debian-based Linux distribution designed for penetration testing, ethical hacking, and digital forensics. 
+This report documents the complete process of setting up a penetration testing lab using Oracle VirtualBox, installing Kali Linux, 
+and performing a **Web Application Penetration Test** against a deliberately vulnerable web application.
+
+---
+
+##  Objective
+
+The objectives  were:
+
+- To understand virtualization using Oracle VirtualBox  
+- To install and configure Kali Linux  
+- To gain hands-on experience with web application penetration testing  
+- To identify security vulnerabilities in a web application  
+- To document findings with proof of concept and remediation strategies  
+
+---
+
+##  Scope of Assessment
+
+### Application Details
+
+| Parameter | Value |
+|---------|------|
+| Application Name | Home of Acunetix Art Web Application |
+| URL | http://testphp.vulnweb.com |
+| Starting Vector | External |
+| Target Criticality | Critical |
+| Assessment Nature | Cautious & Calculated |
+| Assessment Conspicuity | Clear |
+| Proof of Concept | Attached Wherever Applicable |
+
+---
+
+##  Virtualization Overview
+
+Virtualization enables multiple operating systems to run on a single physical host. Oracle VirtualBox was used to safely deploy Kali Linux without impacting the host operating system.
+
+Benefits include:
+- Isolated testing environment  
+- Snapshot and rollback capability  
+- Safe exploitation testing  
+
+---
+
+##  Oracle VirtualBox Installation
+
+###  Downloading VirtualBox
+
+1. Visit https://www.virtualbox.org  
+2. Download VirtualBox for your host OS  
+3. Download the VirtualBox Extension Pack  
+
+###  Installing VirtualBox
+
+1. Run the installer  
+2. Accept license agreement  
+3. Allow network drivers  
+4. Complete installation  
+
+---
+
+##  Kali Linux Installation
+
+###  Download Kali Linux ISO
+
+- URL: https://www.kali.org  
+- Version: Installer (64-bit)
+
+###  Create Kali VM
+
+- Type: Linux  
+- Version: Debian (64-bit)  
+- RAM: 4–8 GB  
+- CPU: 2–4 cores  
+- Storage: 20–40 GB  
+
+###  Install Kali Linux
+
+- Select **Graphical Install**
+- Configure language, region, keyboard
+- Create user credentials
+- Complete installation and reboot
+
+---
+
+##  Web Penetration Testing Methodology
+
+The assessment followed a **Black Box Web Application Security Testing** approach:
+
+1. Reconnaissance  
+2. Input Validation Testing  
+3. Injection Testing  
+4. Authentication Testing  
+5. Client-Side Testing  
+6. Risk Analysis  
+7. Reporting  
+
+---
+
+#  Web Application Penetration Testing Report
+
+## Summary
+
+A total of **6 vulnerabilities** were identified during the assessment.
+
+| Severity | Count |
+|-------|------|
+| High | 3 |
+| Medium | 1 |
+| Low | 2 |
+
+---
+
+## Vulnerability : SQL Injection
+
+ **CWE ID:** CWE-89  
+**Risk Rating:** High  
+**Tools Used:** Browser, SQLmap  
+
+### Description
+SQL Injection was identified in a GET parameter allowing attackers to extract database information.
+
+### Vulnerable URL
+```
+http://testphp.vulnweb.com/artists.php?artist=1
+```
+
+### Impact
+Attackers can retrieve sensitive user information including credentials and personal data.
+
+### Recommendation
+- Use prepared statements
+- Input validation
+- Least privilege
+- Deploy WAF
+
+📸 **Proof of Concept**
+```
+[Insert SQL Injection screenshots here]
+```
+
+---
+
+## Vulnerability : Reflected Cross-Site Scripting (XSS)
+
+ **CWE ID:** CWE-79  
+**Risk Rating:** Medium  
+
+### Description
+JavaScript input was reflected and executed in the browser.
+
+### Impact
+Session hijacking, credential theft
+
+### Recommendation
+- Input filtering
+- Output encoding
+- Content Security Policy
+
+📸 **Proof of Concept**
+```
+[Insert Reflected XSS screenshots here]
+```
+
+---
+
+## Vulnerability : Stored XSS
+
+ **CWE ID:** CWE-79 
+**Risk Rating:** High  
+
+### Description
+Malicious JavaScript input was stored in the application profile section.
+
+### Impact
+Persistent client-side attacks affecting all users.
+
+📸 **Proof of Concept**
+```
+[Insert Stored XSS screenshots here]
+```
+
+---
+
+## Vulnerability : Broken Authentication
+
+ **CWE ID:** CWE-287  
+**Risk Rating:** High  
+
+### Description
+Authentication bypass using SQL logic in login fields.
+
+📸 **Proof of Concept**
+```
+[Insert Authentication Bypass screenshots here]
+```
+
+---
+
+## Vulnerability : HTML Injection
+
+ **CWE ID:** CWE-80  
+**Risk Rating:** Low  
+
+📸 **Proof of Concept**
+```
+[Insert HTML Injection screenshots here]
+```
+
+---
+
+## Vulnerability : Clickjacking
+
+ **CWE ID:** CWE-1021 
+**Risk Rating:** Low  
+
+📸 **Proof of Concept**
+```
+[Insert Clickjacking screenshots here]
+```
+
+---
+
+##  Risk Classification
+
+| Level | Description |
+|----|------------|
+| Low | Minimal risk |
+| Medium | Exploitable with effort |
+| High | Easily exploitable |
+| Critical | Severe impact |
+
+---
+
+##  Conclusion
+
+This assessment demonstrated the complete lifecycle of setting up a penetration testing environment using Kali Linux and Oracle VirtualBox, followed by a detailed web application security assessment. Multiple high-risk vulnerabilities were identified, highlighting the importance of secure coding practices and regular security testing.
+
+---
+
+
+
 # OSI Model and Cloud Computing
 
 ## 1. Introduction
