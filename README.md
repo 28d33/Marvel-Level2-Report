@@ -146,6 +146,8 @@ The instance was successfully launched and reached the **Running** state.
 
 ---
 
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Cloudfront.png)
+
 ### 2. Connecting to the EC2 Instance
 
 - Connected to the EC2 instance using SSH  
@@ -188,6 +190,7 @@ nohup python3 app.py > app.log 2>&1 &
 This ensured the application continued running even after closing the terminal session.
 
 ---
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/EC2_1.png)
 
 ### 6. Configuring Security (Firewall)
 
@@ -211,6 +214,7 @@ curl http://localhost
 curl http://<EC2-Public-IP>
 ```
 
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/ec2_2.png)
 The application responded successfully in both cases.
 
 ---
@@ -265,6 +269,8 @@ This architecture improves performance, scalability, and reliability.
 
 ---
 
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/S3.png)
+
 ### 2. Configuring S3 for CloudFront Access
 
 - Disabled public access where applicable
@@ -300,6 +306,7 @@ This ensured dynamic content is served correctly while maintaining performance.
 - Observed reduced latency and faster response times
 
 ---
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/cloudfront_final.png)
 
 ## Result
 
@@ -383,6 +390,8 @@ Benefits include:
 
 ---
 
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm1.png)
+
 ##  Kali Linux Installation
 
 ###  Download Kali Linux ISO
@@ -398,6 +407,8 @@ Benefits include:
 - CPU: 2–4 cores  
 - Storage: 20–40 GB  
 
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm2.png)
+
 ###  Install Kali Linux
 
 - Select **Graphical Install**
@@ -406,6 +417,10 @@ Benefits include:
 - Complete installation and reboot
 
 ---
+
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm3.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm4.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm5.png)
 
 ##  Web Penetration Testing Methodology
 
@@ -458,9 +473,9 @@ Attackers can retrieve sensitive user information including credentials and pers
 - Least privilege
 - Deploy WAF
 
-📸 **Proof of Concept**
+ **Proof of Concept**
 ```
-[Insert SQL Injection screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_SQLI.png)
 ```
 
 ---
@@ -483,7 +498,8 @@ Session hijacking, credential theft
 
   **Proof of Concept**
 ```
-[Insert Reflected XSS screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_Reflected%20Xss.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_reflected%20Xss%201.png)
 ```
 
 ---
@@ -501,7 +517,8 @@ Persistent client-side attacks affecting all users.
 
   **Proof of Concept**
 ```
-[Insert Stored XSS screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS%201.png)
 ```
 
 ---
@@ -516,7 +533,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 ```
-[Insert Authentication Bypass screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth%201.png)
 ```
 
 ---
@@ -528,7 +546,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 ```
-[Insert HTML Injection screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/HTmli.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/htmli_1.png)
 ```
 
 ---
@@ -540,7 +559,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 ```
-[Insert Clickjacking screenshots here]
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking.png)
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking_1.png)
 ```
 
 ---
@@ -587,6 +607,8 @@ Layer 3 – Network
 Layer 2 – Data Link
 Layer 1 – Physical
 ```
+
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/OSI.jpeg)
 
 This layered structure helps in understanding how data flows from user applications down to the physical network infrastructure used in cloud environments.
 
@@ -971,8 +993,7 @@ The application follows a client-server architecture where two nodes (Host and C
 
 ### 2.2 Workflow Diagram
 
-> **[INSERT IMAGE HERE: System Flowchart / Mermaid Diagram]**  
-> *Figure 1: Application Logic Flow*
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/flowchart.png)
 
 ---
 
@@ -1015,18 +1036,14 @@ pip install pycryptodome
 
 #### Step 1: Start the Host
 
-> **[INSERT IMAGE HERE: Host Terminal]**  
-> *Figure 2: Host Server Startup*
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Screenshot%20from%202026-01-13%2012-15-18.png)
 
 #### Step 2: Connect the Client
 
-> **[INSERT IMAGE HERE: Client Handshake]**  
-> *Figure 3: Successful Handshake*
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Screenshot%20from%202026-01-13%2012-15-26.png)
 
 #### Step 3: Secure Chat
 
-> **[INSERT IMAGE HERE: Encrypted Chat]**  
-> *Figure 4: Encrypted Chat Session*
 
 ---
 
