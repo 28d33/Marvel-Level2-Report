@@ -474,9 +474,9 @@ Attackers can retrieve sensitive user information including credentials and pers
 - Deploy WAF
 
  **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_SQLI.png)
-```
+
 
 ---
 
@@ -497,10 +497,10 @@ Session hijacking, credential theft
 - Content Security Policy
 
   **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_Reflected%20Xss.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_reflected%20Xss%201.png)
-```
+
 
 ---
 
@@ -516,10 +516,10 @@ Malicious JavaScript input was stored in the application profile section.
 Persistent client-side attacks affecting all users.
 
   **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS%201.png)
-```
+
 
 ---
 
@@ -532,10 +532,10 @@ Persistent client-side attacks affecting all users.
 Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth%201.png)
-```
+
 
 ---
 
@@ -545,10 +545,10 @@ Authentication bypass using SQL logic in login fields.
 **Risk Rating:** Low  
 
   **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/HTmli.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/htmli_1.png)
-```
+
 
 ---
 
@@ -558,10 +558,10 @@ Authentication bypass using SQL logic in login fields.
 **Risk Rating:** Low  
 
   **Proof of Concept**
-```
+
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking_1.png)
-```
+
 
 ---
 
