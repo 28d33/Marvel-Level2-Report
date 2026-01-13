@@ -214,6 +214,7 @@ curl http://<EC2-Public-IP>
 The application responded successfully in both cases.
 
 ---
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/EC2.png)
 
 ## Result
 
