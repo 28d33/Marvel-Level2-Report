@@ -1083,3 +1083,120 @@ Cloud computing provides a flexible and efficient approach to managing IT resour
 
 
 
+# Task: Secure End-to-End Encrypted Chat Application
+
+
+**Technology Stack:** Python 3, PyCryptodome, Socket API  
+
+---
+
+## 1. Executive Summary
+
+This project implements a secure, terminal-based Peer-to-Peer (P2P) chat application. It addresses the need for private communication by ensuring that no message travels over the network in plaintext. The application utilizes a **Hybrid Encryption** scheme, combining the convenience of asymmetric encryption (RSA) for the initial handshake with the speed of symmetric encryption (AES) for real-time messaging.
+
+---
+
+## 2. System Architecture
+
+The application follows a client-server architecture where two nodes (Host and Client) establish a direct TCP connection. The security protocol mimics standard TLS/SSL handshakes but is implemented manually for educational transparency.
+
+### 2.1 The Encryption Protocol (Hybrid Approach)
+
+1. **Identity Generation:**  
+   On startup, both users generate a temporary 2048-bit RSA key pair.
+
+2. **Handshake:**  
+   - Users exchange **RSA Public Keys**  
+   - The Host generates a cryptographically secure random **AES-256 Session Key**  
+   - The Host encrypts this session key using the Client's public RSA key and sends it
+
+3. **Secure Session:**  
+   Both parties now possess the identical AES Session Key. All subsequent chat messages are encrypted using **AES-256-CBC** mode with PKCS7 padding.
+
+---
+
+### 2.2 Workflow Diagram
+
+> **[INSERT IMAGE HERE: System Flowchart / Mermaid Diagram]**  
+> *Figure 1: Application Logic Flow*
+
+---
+
+## 3. Technical Implementation
+
+### 3.1 Dependencies
+
+- **Language:** Python 3.13+  
+- **Library:** pycryptodome (v3.23.0)  
+- **Network:** socket, threading  
+
+---
+
+### 3.2 Key Modules
+
+#### CryptoHandler Class
+
+- `encrypt_session_key()` – RSA OAEP  
+- `encrypt_message()` – AES with random IV  
+- `decrypt_message()` – AES decryption  
+
+#### ChatClient Class
+
+- Multithreading for async receive  
+- `SO_REUSEADDR` to prevent port reuse errors  
+
+---
+
+## 4. Usage & Execution
+
+### 4.1 Prerequisites
+
+```bash
+pip install pycryptodome
+```
+
+---
+
+### 4.2 Running the Application
+
+#### Step 1: Start the Host
+
+> **[INSERT IMAGE HERE: Host Terminal]**  
+> *Figure 2: Host Server Startup*
+
+#### Step 2: Connect the Client
+
+> **[INSERT IMAGE HERE: Client Handshake]**  
+> *Figure 3: Successful Handshake*
+
+#### Step 3: Secure Chat
+
+> **[INSERT IMAGE HERE: Encrypted Chat]**  
+> *Figure 4: Encrypted Chat Session*
+
+---
+
+## 5. Challenges & Solutions
+
+### 5.1 Zombie Port Issue
+
+```python
+self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+```
+
+---
+
+### 5.2 Message Fragmentation
+
+A fixed-size length header is used to handle TCP packet fragmentation.
+
+---
+
+
+## 7. Conclusion
+
+This project demonstrates secure communication using hybrid encryption.
+
+---
+
+
