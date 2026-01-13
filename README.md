@@ -100,7 +100,7 @@ git pull origin main
 
 A comprehensive cheatsheet covering 100+ Git commands was created using AI assistance, organized by categories with practical examples.
 
-**📋 Access Cheatsheet:**  
+** Access Cheatsheet:**  
 [Git Commands Cheatsheet](https://github.com/28d33/Cheatsheets/blob/main/git.md)
 
 ---
@@ -118,7 +118,7 @@ A comprehensive cheatsheet covering 100+ Git commands was created using AI assis
 
 ---
 
-# Secure Local Login System 🛡️
+# Task 2 :Secure Local Login System 
 
 A **defensive-by-design** authentication system built with Node.js, Express, and Docker. This project implements a full **Role-Based Access Control (RBAC)** system with "Defense-in-Depth" security principles, running entirely locally using DynamoDB Local and self-signed TLS.
 
@@ -126,7 +126,7 @@ A **defensive-by-design** authentication system built with Node.js, Express, and
 ![Security](https://img.shields.io/badge/Security-High-green)
 ![Docker](https://img.shields.io/badge/Containerized-Docker-blue)
 
-## 🚀 Key Features
+##  Key Features
 
 * **Role-Based Access Control (RBAC):** Distinct flows for `User` (Dashboard) and `Admin` (User Management).
 * **Transport Security:** Enforced **HTTPS/TLS 1.3** using self-signed certificates.
@@ -145,7 +145,7 @@ A **defensive-by-design** authentication system built with Node.js, Express, and
 * **Frontend:** Vanilla HTML/CSS/JS (No frameworks, strict CSP)
 * **Security Libs:** `helmet`, `csurf`, `bcrypt`, `express-rate-limit`, `jsonwebtoken`
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 secure-login-system/
@@ -164,7 +164,7 @@ secure-login-system/
 └── .gitignore
 ```
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -212,7 +212,7 @@ Open your browser to:
 
 > **Note:** Your browser will warn you "Your connection is not private". This is normal because we signed the certificate ourselves. Click **Advanced -> Proceed to localhost**.
 
-## 🧪 How to Test
+##  How to Test
 
 ### 1. Register an Admin
 
@@ -230,7 +230,7 @@ Open your browser to:
 * Inspect the page (F12) -> Network Tab.
 * You will see `Content-Security-Policy`, `X-Frame-Options: DENY`, and strictly scoped Cookies.
 
-## 🛡️ Security Architecture
+##  Security Architecture
 
 | Vector | Defense Mechanism |
 | :--- | :--- |
@@ -240,7 +240,7 @@ Open your browser to:
 | **CSRF** | Double-submit cookie pattern with `csurf` tokens. |
 | **Brute Force** | IP & Username-based exponential backoff/lockout. |
 
-## ⚖️ Disclaimer
+##  Disclaimer
 
 This project is for **educational purposes only**. The `JWT_SECRET` is hardcoded in the docker-compose file for demonstration. In a production environment, use environment variables and a real Certificate Authority.
 
@@ -607,7 +607,7 @@ Session hijacking, credential theft
 - Output encoding
 - Content Security Policy
 
-📸 **Proof of Concept**
+  **Proof of Concept**
 ```
 [Insert Reflected XSS screenshots here]
 ```
@@ -625,7 +625,7 @@ Malicious JavaScript input was stored in the application profile section.
 ### Impact
 Persistent client-side attacks affecting all users.
 
-📸 **Proof of Concept**
+  **Proof of Concept**
 ```
 [Insert Stored XSS screenshots here]
 ```
@@ -640,7 +640,7 @@ Persistent client-side attacks affecting all users.
 ### Description
 Authentication bypass using SQL logic in login fields.
 
-📸 **Proof of Concept**
+  **Proof of Concept**
 ```
 [Insert Authentication Bypass screenshots here]
 ```
@@ -652,7 +652,7 @@ Authentication bypass using SQL logic in login fields.
  **CWE ID:** CWE-80  
 **Risk Rating:** Low  
 
-📸 **Proof of Concept**
+  **Proof of Concept**
 ```
 [Insert HTML Injection screenshots here]
 ```
@@ -664,7 +664,7 @@ Authentication bypass using SQL logic in login fields.
  **CWE ID:** CWE-1021 
 **Risk Rating:** Low  
 
-📸 **Proof of Concept**
+  **Proof of Concept**
 ```
 [Insert Clickjacking screenshots here]
 ```
