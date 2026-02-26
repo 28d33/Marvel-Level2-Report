@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7ed3b34c-2283-442e-a85a-362d0c6c4bd8" /># Task 1: Introduction to Version Control and Git Basics
+# Task 1: Introduction to Version Control and Git Basics
 
 ## Task Overview
 
