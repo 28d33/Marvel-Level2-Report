@@ -1273,4 +1273,13 @@ task 6/
 
 ---
 
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/TASK6.png)
+
+---
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4B79A1,100:283E51&height=120&section=footer"/>
+  <br>
+  <b>End of Report</b><br>
+  <sub>Thank you for your time.</sub>
+</p>
 
