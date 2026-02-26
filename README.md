@@ -1072,3 +1072,54 @@ This project demonstrates secure communication using hybrid encryption.
 
 
 
+
+# Task: Web Scrapping for jobs BeautifulSoup 
+
+# Job Scraper & IP Address Analyzer
+
+A simple Python script that scrapes job postings from the web using **BeautifulSoup** and analyzes the target website's **IP address and TCP/IP protocols**.
+
+## What It Does
+
+| Part | Description |
+|------|-------------|
+| **IP Analysis** | Resolves the target hostname to an IP address via DNS, classifies it (class, version, public/private), and measures TCP handshake time |
+| **SSL/TLS Check** | Inspects the HTTPS certificate — TLS version, issuer, and expiry |
+| **TCP/IP Summary** | Displays how each layer of the TCP/IP stack is used during scraping |
+| **Job Scraping** | Fetches real job postings from RemoteOK, cleans HTML descriptions with BeautifulSoup, and displays them in a table |
+| **Export** | Saves all jobs and network data to `scraped_jobs.json` |
+
+## Requirements
+
+- Python 3.10+
+- `requests` — for HTTP requests
+- `beautifulsoup4` — for HTML parsing
+- `lxml` — HTML parser backend
+
+## How to Run
+
+```bash
+python3 job_scraper.py
+```
+
+## Output
+
+- **Terminal** — IP analysis results, TCP/IP protocol breakdown, and a table of scraped jobs
+- **scraped_jobs.json** — Exported file containing all job data and network analysis
+
+## Project Structure
+
+```
+├── job_scraper.py      # Main script (single file)
+├── scraped_jobs.json   # Generated output (after running)
+└── README.md           # This file
+```
+
+## Key Concepts Demonstrated
+
+- **DNS Resolution** — Translating domain names to IP addresses
+- **IP Classification** — IPv4 classes (A/B/C/D/E), public vs private
+- **TCP 3-Way Handshake** — SYN → SYN-ACK → ACK connection setup
+- **SSL/TLS Encryption** — Secure communication over HTTPS
+- **Web Scraping** — Extracting structured data from web pages using BeautifulSoup
+
