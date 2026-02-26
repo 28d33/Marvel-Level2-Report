@@ -1,4 +1,4 @@
-# Task 1: Introduction to Version Control and Git Basics
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/7ed3b34c-2283-442e-a85a-362d0c6c4bd8" /># Task 1: Introduction to Version Control and Git Basics
 
 ## Task Overview
 
@@ -1096,6 +1096,10 @@ A simple Python script that scrapes job postings from the web using **BeautifulS
 - `beautifulsoup4` — for HTML parsing
 - `lxml` — HTML parser backend
 
+## Link to file
+
+![python file](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/job_scraper.py)
+
 ## How to Run
 
 ```bash
@@ -1106,6 +1110,9 @@ python3 job_scraper.py
 
 - **Terminal** — IP analysis results, TCP/IP protocol breakdown, and a table of scraped jobs
 - **scraped_jobs.json** — Exported file containing all job data and network analysis
+
+![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/web_scraper.png)
+
 
 ## Project Structure
 
