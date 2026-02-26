@@ -1130,3 +1130,78 @@ python3 job_scraper.py
 - **SSL/TLS Encryption** — Secure communication over HTTPS
 - **Web Scraping** — Extracting structured data from web pages using BeautifulSoup
 
+# TASK 2:DynamoDB Login System
+
+A simple user authentication system built with **Flask** and **Amazon DynamoDB Local**, fully containerized with Docker.
+
+## Features
+
+- **User Registration** — Create accounts with username & password
+- **User Login** — Validate credentials against DynamoDB
+- **Password Hashing** — Salted SHA-256 hashing for secure storage
+- **Session Management** — Server-side session tracking via Flask
+- **Dockerized** — One command to run everything
+
+## Tech Stack
+
+| Component       | Technology                  |
+|-----------------|-----------------------------|
+| Backend         | Python 3.12 / Flask         |
+| Database        | Amazon DynamoDB Local       |
+| Containerization| Docker & Docker Compose     |
+| Frontend        | HTML / CSS / JavaScript     |
+
+## Project Structure
+
+```
+├── app.py                # Flask app (register, login, logout APIs)
+├── requirements.txt      # Python dependencies
+├── Dockerfile            # Container image for the Flask app
+├── docker-compose.yml    # Orchestrates Flask + DynamoDB Local
+└── static/
+    └── index.html        # Login / Register UI
+```
+
+## Quick Start
+
+```bash
+# Build and run
+sudo docker compose up --build -d
+
+# Stop
+sudo docker compose down
+```
+
+Open **http://localhost:5000** in your browser.
+
+## API Endpoints
+
+| Method | Endpoint         | Description              |
+|--------|------------------|--------------------------|
+| POST   | `/api/register`  | Register a new user      |
+| POST   | `/api/login`     | Login with credentials   |
+| POST   | `/api/logout`    | End the current session  |
+| GET    | `/api/status`    | Check login status       |
+
+**Request body** (register & login):
+```json
+{ "username": "john", "password": "secret123" }
+```
+
+## How It Works
+
+1. On startup, the app creates a `Users` table in DynamoDB with `username` as the partition key.
+2. **Register** — hashes the password with a random salt and stores `username`, `password_hash`, and `salt` in DynamoDB.
+3. **Login** — fetches the user record, re-hashes the provided password with the stored salt, and compares hashes.
+
+## Ports
+
+- `5000` — Flask web app
+- `8000` — DynamoDB Local
+
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/db_1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/db_2.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/db_3.png)
+---
+
+
