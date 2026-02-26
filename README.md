@@ -1205,3 +1205,72 @@ Open **http://localhost:5000** in your browser.
 ---
 
 
+
+# Task 6:Real-Time Chat Application
+
+A simple real-time chat application built with **Node.js**, **Express**, and **Socket.IO**.
+
+---
+
+## Features
+
+-  Join chat with a custom username
+-  Send and receive messages in real time
+-  Typing indicators
+-  Live online users list
+-  Join / leave notifications
+
+---
+
+## Tech Stack
+
+| Layer    | Technology          |
+|----------|---------------------|
+| Runtime  | Node.js             |
+| Server   | Express v5          |
+| Sockets  | Socket.IO v4        |
+| Frontend | HTML / CSS / JS     |
+
+---
+
+## Getting Started
+
+**1. Install dependencies**
+```bash
+npm install
+```
+
+**2. Start the server**
+```bash
+node server.js
+```
+
+**3. Open in browser**
+```
+http://localhost:3000
+```
+
+---
+
+## Project Structure
+
+```
+task 6/
+├── public/
+│   └── index.html   # Frontend UI
+├── server.js        # Express + Socket.IO server
+└── package.json
+```
+
+---
+
+## How It Works
+
+1. A user opens the app and enters a username to join.
+2. The server broadcasts join/leave events to all connected clients.
+3. Messages sent by any user are instantly emitted to everyone via Socket.IO.
+4. Typing events are broadcast to other users (not the sender).
+
+---
+
+
