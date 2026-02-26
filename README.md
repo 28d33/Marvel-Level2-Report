@@ -322,7 +322,7 @@ This task demonstrated how Amazon CloudFront can be used in conjunction with Ama
 ---
 
 
-# TASK: Penetration Testing Report with Kali
+# TASK 5: Penetration Testing Report with Kali
 
 ---
 
@@ -584,7 +584,7 @@ This assessment demonstrated the complete lifecycle of setting up a penetration 
 
 
 
-# OSI Model
+# TASK 7:OSI Model
 
 ## 1. Introduction
 
@@ -739,7 +739,7 @@ The OSI model provides a structured approach to understanding network communicat
 
 ---
 
-# Types of Cloud Computing
+# Task 8:Types of Cloud Computing
 
 ## Introduction
 Cloud computing refers to the delivery of computing services such as servers, storage, databases, networking, software, analytics, artificial intelligence, and intelligence over the internet (the cloud). It enables users to access IT resources on demand without the need for direct active management of physical infrastructure. Cloud computing supports modern technologies such as big data, Internet of Things (IoT), artificial intelligence (AI), machine learning (ML), and DevOps.
@@ -959,7 +959,7 @@ Cloud computing provides a flexible and efficient approach to managing IT resour
 
 
 
-# Task: Secure End-to-End Encrypted Chat Application
+# Task 9: Secure End-to-End Encrypted Chat Application
 
 
 **Technology Stack:** Python 3, PyCryptodome, Socket API  
@@ -1073,9 +1073,9 @@ This project demonstrates secure communication using hybrid encryption.
 
 
 
-# Task: Web Scrapping for jobs BeautifulSoup 
+# Task 10: Web Scrapping for jobs BeautifulSoup 
 
-# Job Scraper & IP Address Analyzer
+## Job Scraper & IP Address Analyzer
 
 A simple Python script that scrapes job postings from the web using **BeautifulSoup** and analyzes the target website's **IP address and TCP/IP protocols**.
 
