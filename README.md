@@ -1281,7 +1281,7 @@ The system successfully:
 - Stores user credentials securely in DynamoDB
 - Validates login using hashed password comparison
 - Provides a simple web interface for interaction
-"""
+  
 ![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo1.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo2.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo3.png)
