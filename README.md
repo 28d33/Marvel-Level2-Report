@@ -101,7 +101,7 @@ git pull origin main
 A comprehensive cheatsheet covering 100+ Git commands was created using AI assistance, organized by categories with practical examples.
 
 ** Access Cheatsheet:**  
-[Git Commands Cheatsheet](https://github.com/28d33/Cheatsheets/blob/main/git.md)
+[Git Commands Cheatsheet](https://github.com/28d33/Cheatsheets/raw/main/git.md)
 
 ---
 
@@ -146,7 +146,7 @@ The instance was successfully launched and reached the **Running** state.
 
 ---
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Cloudfront.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Cloudfront.png)
 
 ### 2. Connecting to the EC2 Instance
 
@@ -190,7 +190,7 @@ nohup python3 app.py > app.log 2>&1 &
 This ensured the application continued running even after closing the terminal session.
 
 ---
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/EC2_1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/EC2_1.png)
 
 ### 6. Configuring Security (Firewall)
 
@@ -214,11 +214,11 @@ curl http://localhost
 curl http://<EC2-Public-IP>
 ```
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/ec2_2.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/ec2_2.png)
 The application responded successfully in both cases.
 
 ---
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/EC2.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/EC2.png)
 
 ## Result
 
@@ -269,7 +269,7 @@ This architecture improves performance, scalability, and reliability.
 
 ---
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/S3.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/S3.png)
 
 ### 2. Configuring S3 for CloudFront Access
 
@@ -306,7 +306,7 @@ This ensured dynamic content is served correctly while maintaining performance.
 - Observed reduced latency and faster response times
 
 ---
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/cloudfront_final.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/cloudfront_final.png)
 
 ## Result
 
@@ -390,7 +390,7 @@ Benefits include:
 
 ---
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/vm1.png)
 
 ##  Kali Linux Installation
 
@@ -407,7 +407,7 @@ Benefits include:
 - CPU: 2–4 cores  
 - Storage: 20–40 GB  
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm2.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/vm2.png)
 
 ###  Install Kali Linux
 
@@ -418,9 +418,9 @@ Benefits include:
 
 ---
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm3.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm4.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/vm5.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/vm3.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/vm4.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/vm5.png)
 
 ##  Web Penetration Testing Methodology
 
@@ -475,7 +475,7 @@ Attackers can retrieve sensitive user information including credentials and pers
 
  **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_SQLI.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/kali_SQLI.png)
 
 
 ---
@@ -498,8 +498,8 @@ Session hijacking, credential theft
 
   **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_Reflected%20Xss.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/kali_reflected%20Xss%201.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/kali_Reflected%20Xss.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/kali_reflected%20Xss%201.png)
 
 
 ---
@@ -517,8 +517,8 @@ Persistent client-side attacks affecting all users.
 
   **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Stored%20XSS%201.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Stored%20XSS.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Stored%20XSS%201.png)
 
 
 ---
@@ -533,8 +533,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Broken%20Auth%201.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Broken%20Auth.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Broken%20Auth%201.png)
 
 
 ---
@@ -546,8 +546,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/HTmli.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/htmli_1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/HTmli.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/htmli_1.png)
 
 
 ---
@@ -559,8 +559,8 @@ Authentication bypass using SQL logic in login fields.
 
   **Proof of Concept**
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking.png)
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/clickjacking_1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/clickjacking.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/clickjacking_1.png)
 
 
 ---
@@ -608,7 +608,7 @@ Layer 2 – Data Link
 Layer 1 – Physical
 ```
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/OSI.jpeg)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/OSI.jpeg)
 
 This layered structure helps in understanding how data flows from user applications down to the physical network infrastructure used in cloud environments.
 
@@ -993,7 +993,7 @@ The application follows a client-server architecture where two nodes (Host and C
 
 ### 2.2 Workflow Diagram
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/flowchart.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/flowchart.png)
 
 ---
 
@@ -1031,17 +1031,17 @@ pip install pycryptodome
 ```
 
 ---
-[Link to application](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/chat.py)
+[Link to application](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/chat.py)
 
 ### 4.2 Running the Application
 
 #### Step 1: Start the Host
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Screenshot%20from%202026-01-13%2012-15-18.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Screenshot%20from%202026-01-13%2012-15-18.png)
 
 #### Step 2: Connect the Client
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/Screenshot%20from%202026-01-13%2012-15-26.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/Screenshot%20from%202026-01-13%2012-15-26.png)
 
 
 
@@ -1098,7 +1098,7 @@ A simple Python script that scrapes job postings from the web using **BeautifulS
 
 ## Link to file
 
-![python file](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/job_scraper.py)
+![python file](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/job_scraper.py)
 
 ## How to Run
 
@@ -1111,7 +1111,7 @@ python3 job_scraper.py
 - **Terminal** — IP analysis results, TCP/IP protocol breakdown, and a table of scraped jobs
 - **scraped_jobs.json** — Exported file containing all job data and network analysis
 
-![](https://github.com/28d33/Marvel-Level2-Report/blob/main/files/web_scraper.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/web_scraper.png)
 
 
 ## Project Structure
@@ -1203,6 +1203,93 @@ Open **http://localhost:5000** in your browser.
 ![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/db_2.png)
 ![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/db_3.png)
 ---
+
+
+
+<h1 align="center">✨ Alternative Implementation ✨</h1>
+
+# Simple User Login System (DynamoDB + Node.js)
+
+## Overview
+
+This project implements a basic User Login System using:
+
+- HTML, CSS, JavaScript (Frontend)
+- Node.js with Express (Backend)
+- Amazon DynamoDB (Cloud Database)
+- bcrypt (Password Hashing)
+
+---
+
+## Features Implemented
+
+1. User Registration
+2. User Login Validation
+3. Password Hashing using bcrypt
+4. Data Storage in DynamoDB
+5. Simple Web UI
+
+---
+
+## Database
+
+Table Name: Users  
+Primary Key: username (String)
+
+Stored Record Format:
+
+{
+  "username": "admin",
+  "password": "hashed_password_value"
+}
+
+Passwords are stored in hashed format.
+
+---
+
+
+### Register
+POST /register
+
+- Accepts username and password
+- Hashes password
+- Stores user in DynamoDB
+
+### Login
+POST /login
+
+- Accepts username and password
+- Fetches user from DynamoDB
+- Compares hashed password
+- Returns success or error
+
+---
+
+## Frontend
+
+- Register form
+- Login form
+- Fetch API used to call backend
+- Displays success/error messages
+
+---
+
+## Conclusion
+
+The system successfully:
+
+- Stores user credentials securely in DynamoDB
+- Validates login using hashed password comparison
+- Provides a simple web interface for interaction
+"""
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo1.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo2.png)
+![](https://github.com/28d33/Marvel-Level2-Report/raw/main/files/dynamo3.png)
+
+
+
+
+
 
 
 
